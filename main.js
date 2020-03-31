@@ -1,7 +1,51 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+const firstNumberIsLess = function(num1, num2) {
+  if (num1 < num2) {
+    return -1;
+  } else if (num1 > num2) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
 
+const secondNumberIsLess = function(num1, num2) {
+  if (num2 < num1) {
+    return -1;
+  } else if (num2 > num1) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+
+const firstNameIsFirstAlphabetically = function(name1, name2) {
+  if (name1 < name2) {
+    return -1;
+  } else if (name1 > name2) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+const firstLastNameIsFirstAlphabetically = function(name1, name2) {
+  name1 = name1.slice(name1.indexOf(' ') + 1)
+
+  name2 = name2.slice(name2.indexOf(' ') + 1)
+
+  if (name1 < name2) {
+    return -1;
+  } else if (name1 > name2) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+  
+  
+  
 
 
 
